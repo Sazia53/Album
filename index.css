@@ -6,37 +6,46 @@ body {
 
 .pagecontent {
     width: 80%;
-    padding: 1%;
     max-width: 960px;
+    padding: 1%;
     margin: auto;
 }
 
 h1 {
     font-weight: 300;
     font-size: 48pt;
+    margin-bottom: 0;
 }
 
-ol {
-    margin: 0;
-    padding-left: 20px;
+input#search {
+    border: 0;
+    background-color: transparent;
+    font-size: 48pt;
+    width: 600px;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #ccc; /* hellgrau wie im Bild */
+    font-weight: 300;
+    margin-left: 20px; /* Abstand zum "Albums" */
+    vertical-align: bottom;
 }
 
 .line {
     width: 100%;
     border-bottom: 2px solid #4C4C4C;
+    margin: 40px 0 20px 0;
 }
+
 .line.light {
     border-bottom: 1px solid #626262;
 }
 
 .image-wrapper {
-    width: 25%;       
-    float: left;     
+    width: 25%;
+    float: left;
     overflow: hidden;
 }
 
-.cover-image 
-    .cover-image {
+.cover-image {
     width: 100%;
     max-width: 150px;
     display: block;
@@ -44,6 +53,7 @@ ol {
     padding: 5%;
     height: auto;
     border-radius: 5px;
+}
 
 .text-wrapper {
     width: 74%;
@@ -57,6 +67,7 @@ ol {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
+    padding-left: 20px;
 }
 
 .clear {
@@ -69,14 +80,13 @@ ol {
     font-style: italic;
 }
 
-input#search {
-    border: 0;
-    background-color: transparent;
-    font-size: 48pt;
-    width: 600px;
-    font-family: "Helvetica Neue";
-    color: #444;
-    font-weight: 300;
+.album-title {
+    font-weight: bold;
 }
 
-
+.artist-name {
+    font-weight: normal;
+    font-style: italic;
+    margin-left: 5px;
+    color: #444;
+}
